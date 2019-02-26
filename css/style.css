@@ -1,0 +1,327 @@
+@font-face {
+  font-weight: 100;
+  font-family: "SegoeUI";
+  font-style: normal;
+
+  src: local("Segoe UI Light"),
+  url("../fonts/SegoeUI-Light.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: "SegoeUI";
+  font-style: normal;
+
+  src: local("Segoe UI"),
+  url("../fonts/SegoeUI.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 600;
+  font-family: "SegoeUI";
+  font-style: normal;
+
+  src: local("Segoe UI Semibold"),
+  url("../fonts/SegoeUI-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "SegoeUI";
+  font-style: normal;
+
+  src: local("Segoe UI Bold"),
+  url("../fonts/SegoeUI-Bold.woff") format("woff");
+}
+
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  border: 0;
+
+          clip-path: inset(100%);
+
+  -webkit-clip-path: inset(100%);
+}
+
+body {
+  min-width: 1920px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "SegoeUI", Arial, sans-serif;
+  color: #ffffff;
+  word-wrap: break-word;
+  word-break: break-all;
+
+  background-color: #515f67;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.logo-link {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+
+.logo-link span {
+  color: #4bcaff;
+}
+
+.site-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.site-item a {
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.site-item-active a {
+  color: #4bcaff;
+}
+
+.site-lead {
+  margin: 0;
+
+  font-weight: 100;
+  font-size: 42px;
+  line-height: 75px;
+  text-transform: uppercase;
+
+  background-color: rgba(53, 63, 70, 0.85);
+}
+
+.section-title {
+  margin: 0;
+
+  font-weight: 100;
+  font-size: 30px;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+
+.services-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.services-item .title {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.services-item .text {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.portfolio {
+  background-color: #ffffff;
+}
+
+.portfolio .section-title {
+  color: #515f67;
+}
+
+.sort-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.sort-item a {
+  font-weight: 700;
+  color: #515f67;
+  text-transform: uppercase;
+}
+
+.sort-item-active a {
+  color: #4bcaff;
+}
+
+.portfolio-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.default {
+  background-color: #515f67;
+}
+
+.default-text {
+  margin: 0;
+}
+
+.default-link {
+  font-weight: 700;
+  color: #353f46;
+  text-transform: uppercase;
+}
+
+.twitter {
+  background-color: #4bcaff;
+}
+
+.twitter-text {
+  margin: 0;
+
+  font-weight: 100;
+  font-size: 28px;
+  line-height: 50px;
+}
+
+.twitter-text a {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.about-text {
+  margin: 0;
+}
+
+.social-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.testimonials {
+  color: #515f67;
+
+  background-color: #ffffff;
+}
+
+.testimonials .text {
+  margin: 0;
+
+  font-weight: 100;
+  font-size: 28px;
+  line-height: 50px;
+}
+
+.testimonials .author {
+  font-weight: 700;
+  line-height: 50px;
+  color: #4bcaff;
+  font-style: normal;
+}
+
+.contact-item {
+  margin: 0;
+}
+
+.contact-item .form-label {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.contact-item input,
+.contact-item textarea {
+  font: inherit;
+}
+
+.contact-text {
+  margin: 0;
+
+  font-weight: 600;
+}
+
+.contact-info {
+  font-weight: 600;
+}
+
+.contact-info address {
+  font-style: normal;
+}
+
+.contact-info a {
+  color: #ffffff;
+}
+
+.contact-btn {
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #4bcaff;
+  border: none;
+}
+
+.page-footer {
+  background-color: #353f47;
+}
+
+.footer-navigation-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.footer-navigation-item a {
+  font-weight: 600;
+  color: #515f67;
+  text-transform: uppercase;
+}
+
+.copyright {
+  font-weight: 600;
+  font-size: 12px;
+  color: #515f67;
+  text-transform: uppercase;
+}
