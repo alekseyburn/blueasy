@@ -94,8 +94,35 @@ body {
   padding: 0 15px;
 }
 
+/*header*/
+
+.page-header {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 252px;
+
+  background-color: #515f67;
+  background-image: url("../img/bg-grass.jpg");
+  background-attachment: fixed;
+}
+
+.main-navigation {
+  padding-top: 58px;
+  padding-bottom: 60px;
+
+  background-color: rgba(53, 63, 70, 0.85);
+}
+
+.main-navigation .container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .logo-link {
-  font-weight: 700;
+  display: block;
+  flex-grow: 1px;
+
+  font-weight: 600;
   font-size: 30px;
   line-height: 32px;
   text-transform: uppercase;
@@ -106,29 +133,75 @@ body {
 }
 
 .site-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 1000px;
   margin: 0;
+  margin-top: 3px;
   padding: 0;
 
   list-style: none;
 }
 
+.site-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .site-item a {
-  font-weight: 700;
+  font-weight: 600;
   color: #ffffff;
   text-transform: uppercase;
 }
 
 .site-item-active a {
+  position: relative;
+
   color: #4bcaff;
 }
 
+.site-item-active a::after {
+  content: "";
+  position: absolute;
+  top: -8px;
+  right: -20px;
+  bottom: -8px;
+  left: -20px;
+
+  border: 2px solid  #4bcaff;
+}
+
 .site-lead {
-  margin: 0;
+  position: relative;
+  z-index: 2;
+
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 244px;
+  margin-bottom: 2px;
+  padding: 0 15px;
 
   font-weight: 100;
   font-size: 42px;
   line-height: 75px;
+  text-align: center;
   text-transform: uppercase;
+}
+
+
+.site-lead:nth-of-type(2) {
+  margin-top: 0;
+}
+
+.site-lead::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  right: -2px;
+  bottom: 4px;
+  left: -3px;
+  z-index: -1;
 
   background-color: rgba(53, 63, 70, 0.85);
 }
