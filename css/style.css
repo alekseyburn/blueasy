@@ -25,26 +25,17 @@
   url("../fonts/SegoeUI-SemiBold.woff") format("woff");
 }
 
-@font-face {
-  font-weight: 700;
-  font-family: "SegoeUI";
-  font-style: normal;
-
-  src: local("Segoe UI Bold"),
-  url("../fonts/SegoeUI-Bold.woff") format("woff");
-}
-
 
 *,
 *::before,
 *::after {
   -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 img {
@@ -69,7 +60,7 @@ a {
 
   border: 0;
 
-          clip-path: inset(100%);
+  clip-path: inset(100%);
 
   -webkit-clip-path: inset(100%);
 }
@@ -94,14 +85,23 @@ body {
 
 /*header*/
 
+
+
 .page-header {
   display: flex;
   flex-direction: column;
   padding-bottom: 252px;
 
   background-color: #515f67;
-  background-image: url("../img/bg-grass.jpg");
   background-attachment: fixed;
+}
+
+.webp .page-header {
+  background-image: url("../img/bg-grass.webp");
+}
+
+.no-webp .page-header {
+  background-image: url("../img/bg-grass.jpg");
 }
 
 .main-navigation {
@@ -510,10 +510,51 @@ body {
   border-color: #4bcaff;
 }
 
-.video-link {
+.video-embed {
+  position: relative;
+
   flex-basis: 560px;
   align-self: flex-end;
   height: 313px;
+
+  background-color: #25011f;
+}
+
+.video-media {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  border: none;
+  cursor: pointer;
+}
+
+.video-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+
+  display: none;
+  width: 65px;
+  height: 40px;
+
+  background-color: rgba(23,35,34,0.75);
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+.video-embed:hover .video-btn,
+.video-btn:focus {
+  background-color: rgb(0, 173, 239);
+  outline: none;
+}
+
+.video-enabled .video-btn {
+  display: block;
 }
 
 /*twitter*/
@@ -582,8 +623,15 @@ body {
   padding-bottom: 147px;
 
   background-color: #353f47;
-  background-image: url("../img/bg-photo.jpg");
   background-repeat: no-repeat;
+}
+
+.webp .about {
+  background-image: url("../img/bg-photo.webp");
+}
+
+.no-webp .about {
+  background-image: url("../img/bg-photo.jpg");
 }
 
 .about::after {
@@ -723,8 +771,15 @@ body {
   padding-bottom: 80px;
 
   background-color: #515f67;
-  background-image: url("../img/bg-cup.jpg");
   background-repeat: no-repeat;
+}
+
+.webp .contact {
+  background-image: url("../img/bg-cup.webp");
+}
+
+.no-webp .contact {
+  background-image: url("../img/bg-cup.jpg");
 }
 
 .contact::after {
@@ -958,23 +1013,23 @@ body {
   80%,
   to {
     -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 
   0% {
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
-            transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
     opacity: 0;
   }
 
   80% {
     -webkit-transform: scale3d(0.97, 0.97, 0.97);
-            transform: scale3d(0.97, 0.97, 0.97);
+    transform: scale3d(0.97, 0.97, 0.97);
   }
 
   to {
     -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
     opacity: 1;
   }
 }
