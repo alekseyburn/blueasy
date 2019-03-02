@@ -958,12 +958,6 @@ body {
 
   background-color: transparent;
   border: 2px solid #ffffff;
-
-  -webkit-transition: 0.3s;
-
-  -o-transition: 0.3s;
-
-  transition: 0.3s;
 }
 
 .form-input:hover,
@@ -1023,13 +1017,6 @@ body {
 
   background-color: transparent;
   border: 2px solid #ffffff;
-
-  -webkit-transition: 0.3s;
-
-  -o-transition: 0.3s;
-
-  transition: 0.3s;
-
   resize: none;
 }
 
